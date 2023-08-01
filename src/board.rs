@@ -3,7 +3,7 @@ use rand::Rng;
 
 #[derive(Debug)]
 pub struct Board {
-    cells: Array2D<u8>
+    cells: Array2D<u8>,
 }
 
 impl Board {
@@ -14,7 +14,6 @@ impl Board {
         };
 
         let array = Array2D::filled_by_row_major(random_cell, 20, 20);
-        Self{cells: array}
+        Self { cells: array }
     }
-
 }
